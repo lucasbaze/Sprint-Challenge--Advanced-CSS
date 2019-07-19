@@ -1,6 +1,7 @@
 // Home Content
 
 .home {
+    .flex(column);
 
   .intro {
 
@@ -83,17 +84,6 @@
         margin-bottom: 26px;
       }
 
-      .btn {
-          .button();
-
-          @media @tablet{
-              .button(50%);
-          }
-
-          @media @phone{
-              .button(100%, 30px);
-          }
-      }
     }
 
     .walk-img {
@@ -112,28 +102,10 @@
       }
     }
   }
+
+  footer{
+      align-self: flex-end;
+      width: 100%;
+  }
+
 }// home
-
-/*
-@media @phone{
-    .home{
-        .walk{
-            .flex(column-reverse, flex-start, flex-stretch);
-            padding: 15px;
-
-            .walk-img{
-                width: 100%;
-                margin: 20px 2.5%;
-
-                img{
-                    width: 100%;
-                }
-            }
-
-            .walk-text{
-                width: 100%;
-            }
-        }
-    }
-}
-*/

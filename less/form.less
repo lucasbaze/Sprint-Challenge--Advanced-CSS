@@ -1,0 +1,36 @@
+form{
+    .flex(column, flex-start, stretch);
+
+    div:last-child{
+        width: 100%;
+
+        .btn {
+            .button();
+
+            @media @tablet{
+                .button(50%);
+            }
+
+            @media @phone{
+                .button(100%, 30px);
+            }
+        }
+    }
+
+    .form-group{
+        margin: 30px 0px;
+
+        input, textarea{
+            font-size: 1.4rem;
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid @main-border-color;
+            .transition(all, 0.5s, linear);
+        }
+
+        input:focus, textarea:focus{
+            outline: none;
+            transform: scaleX(1.1);
+        }
+    }
+}
