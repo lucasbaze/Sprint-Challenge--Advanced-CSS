@@ -1,1 +1,23 @@
 // Navigation code here
+.navigation{
+    .flex(column, flex-start, center);
+    background-color: @nav-bg;
+    padding: 15px 0px;
+
+    nav{
+        max-width: 500px;
+        width: 100%;
+        .flex(row, space-around, space-around);
+
+        a{
+            margin-top: 20px;
+            font-size: 1.6rem;
+            text-decoration: none;
+            color: @main-font-color;
+
+            &:hover{
+                color: @ebony-clay;
+            }
+        }
+    }
+}
