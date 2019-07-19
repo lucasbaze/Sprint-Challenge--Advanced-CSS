@@ -34,13 +34,40 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+
+##A:
+An adaptive website is teacher that is able to teach students with different learning styles but is really focused on 1 subject. A fully responsive website is like a politician that is able to do the same thing but with hundreds of people in the same room. Adaptive sites tend to "snap" into place depending on the screen size, while Responsive sites "flow" consistently between screen sizes.
+
+
 2. Describe what it means to be mobile first vs desktop first.
+
+
+##A:
+A mobile first design will start with the base design & styles for mobile, and then use min-width to adjust the size to larger devices. A desktop first is the opposite using max-width as the decision criteria for layout changes.
+
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+
+##A:
+using `font-size: 62.5%` should set all the default text in the browser to a font-size of 10px and allow us, as front-end developers, to use rems to straight multiply the font size. If I want to make all h1 font size's 35px, then I'd just type `h1{font-size: 3.5rem;}` and this will also be responsive to the browser's default font sizing.
+
+
+
 4. How would you describe preprocessing to someone new to CSS?
 
+
+##A:
+Preprocessing is like Google Translate for your English to Spanish essay assignment. CSS is the Spanish you're trying to get to, but you're better with English (and it's easier to write and understand for you), so you write your project in English (LESS, SASS, SCSS) and then we run your project through Google Translate (the "Preprocessing") in order to get to Spanish (CSS) which is what the browser understands.
+
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+
+##A:
+Parametric mixins and nesting. This is hyper intuitive and makes modifying code SOOO much faster and easier to understand. While we didn't go over it, the concept that's most challenging is :extend. Not very intuitive, but I also didn't work with it much. Lastly, I wish we could have gone over Mixin Guards... they seem quite fun.
+
+
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -56,13 +83,13 @@ Follow these steps to set up your project:
 - [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
 - [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
 - [ ] Push commits: git push origin `<firstName-lastName>`.
- 
+
 Follow these steps for completing your project.
 
 - [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
 - [ ] Add your project manager as a reviewer on the pull-request
 - [ ] Your project manager will count the project as complete by merging the branch back into master.
- 
+
 
 ### Preprocessor Set up
 
